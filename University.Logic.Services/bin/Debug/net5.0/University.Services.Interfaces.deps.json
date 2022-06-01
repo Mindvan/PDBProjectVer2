@@ -1,0 +1,50 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "University.Services.Interfaces/1.0.0": {
+        "dependencies": {
+          "University.DAL.Entities": "1.0.0",
+          "University.DAL.IRepository": "1.0.0"
+        },
+        "runtime": {
+          "University.Services.Interfaces.dll": {}
+        }
+      },
+      "University.DAL.Entities/1.0.0": {
+        "runtime": {
+          "University.DAL.Entities.dll": {}
+        }
+      },
+      "University.DAL.IRepository/1.0.0": {
+        "dependencies": {
+          "University.DAL.Entities": "1.0.0"
+        },
+        "runtime": {
+          "University.DAL.IRepository.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "University.Services.Interfaces/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "University.DAL.Entities/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "University.DAL.IRepository/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,205 @@
+﻿@font-face {
+    font-family: 'AkkuratLL';
+    src: url('../fonts/AkkuratLL-Light.woff') format('woff');
+    font-display: swap;
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AkkuratLL';
+    src: url('../fonts/AkkuratLL-Regular.woff') format('woff');
+    font-display: swap;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AkkuratLL';
+    src: url('../fonts/AkkuratLL-Bold.woff') format('woff');
+    font-display: swap;
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AkkuratLL';
+    src: url('../fonts/AkkuratLL-Black.woff') format('woff');
+    font-display: swap;
+    font-weight: 900;
+    font-style: normal;
+}
+
+body {
+    font-family: 'AkkuratLL', sans-serif;
+    width: 500px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 30px;
+    font-size: 1.1em;
+}
+
+h1 {
+    font-family: 'AkkuratLL', sans-serif;
+    font-weight: 800;
+}
+
+table {
+    margin: 0 auto;
+    margin-top: 30px;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+    table td, th {
+        border-bottom: 0.5px solid #000;
+        padding: 15px 25px 15px 25px;
+        border-collapse: collapse;
+        border: 1px solid black;
+    }
+
+    table th {
+        background-color: white;
+        text-transform: uppercase;
+    }
+
+    table td:nth-child(5) a {
+        color: black;
+        font-weight: 700;
+        transition: 0.3s;
+    }
+
+        table td:nth-child(5) a:hover {
+            color: #43C2EB;
+        }
+
+.formst {
+    width: 75%;
+    display: none;
+    margin: 0 auto;
+    margin-top: 30px;
+    text-align: start;
+    margin-bottom: 80px;
+}
+
+    .formst input {
+        margin-top: 5px;
+        margin-bottom: 15px;
+        border: 1px solid #43c2eb;
+        padding: 15px;
+        width: 96.5%;
+        font-size: 20px;
+    }
+
+    .formst .btmsave, .btmres {
+        width: 150px;
+        padding: 5px;
+        text-align: center;
+        background-color: #fff;
+        border: 2px solid #43C2EB;
+        font-size: 1.2em;
+        float: left;
+        margin-top: 7px;
+        transition: 0.3s;
+    }
+
+    .formst .btmres {
+        float: right;
+    }
+
+    .formst .btmsave:hover, .btmres:hover {
+        background-color: #43c2eb;
+        color: white;
+    }
+
+.btmadd {
+    width: 250px;
+    padding: 5px;
+    text-align: center;
+    background-color: #fff;
+    border: 2px solid #43C2EB;
+    font-size: 1.2em;
+    margin-top: 7px;
+    transition: 0.3s;
+}
+
+    .btmadd:hover {
+        background-color: #43C2EB;
+        color: white;
+        cursor: pointer;
+    }
+
+body {
+    width: 1200px;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 1.1em;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    background-color: #43C2EB;
+    margin-bottom: 100px;
+}
+
+.list {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    list-style-type: none;
+    align-items: center;
+    padding: 25px;
+}
+
+.list-item {
+    font-weight: 600;
+}
+
+.list li {
+    display: flex;
+    border-left: 3px solid black;
+    justify-content: center;
+    width: 150px;
+}
+
+.list li:first-child {
+    border-left: none;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.3em;
+    margin: 0 auto;
+    transition: 0.3s;
+}
+
+    .menu ul li a:hover {
+        color: black;
+        cursor: pointer;
+    }
+
+table .inputatt{
+
+    padding: 10px;
+
+}
+
+form select {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #43c2eb;
+    padding: 15px;
+    width: 100%;
+    font-size: 20px;
+}
+
+label {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.col-md-5 {
+    padding-bottom: 30px;
+}

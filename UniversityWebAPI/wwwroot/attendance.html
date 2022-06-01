@@ -1,0 +1,191 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Посещаемость</title>
+    <!--<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css" rel="stylesheet" />-->
+    <link href="css/Student.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="menu">
+        <ul class="list">
+            <li class="list-item">
+                <a href="index.html">Главная</a>
+            </li>
+            <li class="list-item">
+                <a href="student.html">Студенты</a>
+            </li>
+            <li class="list-item">
+                <a href="lector.html">Лекторы</a>
+            </li>
+            <li class="list-item">
+                <a href="lection.html">Лекции</a>
+            </li>
+            <li class="list-item">
+                <a href="lectionlectors.html">Расписание</a>
+            </li>
+        </ul>
+    </div>
+
+    <h1>Посещение</h1>
+
+    <table class="table table-condensed table-striped  col-md-6">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>ID Студента</th>
+                <th>Присутствие</th>
+                <th>Оценка</th>
+                <th>Сохранить</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+
+    <script>
+        var cnt;
+        var paramsString = document.location.search;
+        var searchParams = new URLSearchParams(paramsString);
+
+       var id= searchParams.get("id");
+        
+        // Получение всех пользователей
+        async function GetAttendance() {
+            const response = await fetch("/api/attendance", {
+                method: "GET",
+                headers: { "Accept": "application/json" }
+            });
+            if (response.ok === true) {
+                // получаем данные
+                const attend = await response.json();
+                let rows = document.querySelector("tbody");
+                cnt = 0;
+                attend.forEach(user => {
+                    // добавляем полученные элементы в таблицу
+                    if (user.lrLnId==window.id)
+                    rows.append(row(user));
+                });
+            }
+        }
+       
+
+
+
+        async function SaveAttendance(id, studid, lrLnId ,status, mark) {
+            console.log("id", id);
+            console.log("studid", studid);
+            console.log("lrLnId", lrLnId);
+            console.log("status", status);
+            console.log("mark", mark);
+            const response = await fetch("api/attendance", {
+                method: "PUT",
+                headers: { "Accept": "application/json", "Content-Type": "application/json" },
+                body: JSON.stringify({
+                    id: parseInt(id, 10),
+                    studentId: studid,
+                    lrLnId: lrLnId,
+                    status: status,
+                    mark: mark
+                })
+            });
+            if (response.ok === true) {
+                const user = await response.json();
+                document.querySelector("tr[data-rowid='" + user.id + "']").replaceWith(row(user));
+            }
+        }
+
+        async function DeleteAttendance(id) {
+            const response = await fetch("/api/attendance/" + id, {
+                method: "DELETE",
+                headers: { "Accept": "application/json" }
+            });
+            if (response.ok === true) {
+                const user = await response.json();
+                document.querySelector("tr[data-rowid='" + user.id + "']").remove();
+            }
+        }
+
+
+        // создание строки для таблицы
+        function row(user) {
+
+            const tr = document.createElement("tr");
+            tr.setAttribute("data-rowid", user.id);
+
+            const idTd = document.createElement("td");
+            idTd.append(user.id);
+            tr.append(idTd);
+            window.a = user.id + 1;
+
+            const studTd = document.createElement("td");           
+            studTd.append(user.studentId);
+            tr.append(studTd);
+
+            const studTd1 = document.createElement("td");         
+         
+            var check1 = "status" + user.id;
+            const check = document.createElement("input");
+            check.setAttribute("type", "checkbox");
+            check.setAttribute("class", "inputatt");
+     
+            console.log('stat',user.status);
+            if (user.status == 1) {
+                check.checked = true;
+            } else {
+                check.checked = false;
+            }
+            check.setAttribute("value", "1");
+            check.setAttribute("id", check1);
+            check.append("был/не был");
+            studTd1.appendChild(check);
+            tr.appendChild(studTd1);
+
+            const studTd2 = document.createElement("td");
+            var mark1= "mark"+user.id;
+            const mark = document.createElement("input");
+            mark.setAttribute("class", "inputatt");
+            mark.setAttribute("type", "number");
+            mark.setAttribute("id", mark1);
+            mark.setAttribute("value", user.mark);
+            tr.appendChild(mark);
+            studTd2.appendChild(mark);
+            tr.appendChild(studTd2);
+
+            const linksTd = document.createElement("td");
+
+            const editLink = document.createElement("a");
+            editLink.setAttribute("data-id", user.id);
+            editLink.setAttribute("style", "cursor:pointer;padding:15px;");
+            editLink.append("Сохранить");
+            editLink.addEventListener("click", e => {
+                e.preventDefault();
+                let stat;
+                if (document.getElementById(check1).value == 1) {
+                    stat = 1;
+                }
+                else {
+                    stat = 0;
+                }
+                let usermark = document.getElementById(mark1).value;
+                SaveAttendance(user.id, user.studentId, user.lrLnId, stat, usermark);
+            });
+            linksTd.append(editLink);
+            tr.appendChild(linksTd);
+
+
+
+            cnt++;
+            return tr;
+
+        }
+
+        // загрузка пользователей
+        GetAttendance();
+
+
+
+    </script>
+</body>
+</html>
