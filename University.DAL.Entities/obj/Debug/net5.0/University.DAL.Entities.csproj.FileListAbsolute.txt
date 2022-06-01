@@ -1,0 +1,12 @@
+C:\Users\Honor\Desktop\PDBProject\University.Domain.Core\bin\Debug\net5.0\University.DAL.Entities.deps.json
+C:\Users\Honor\Desktop\PDBProject\University.Domain.Core\bin\Debug\net5.0\University.DAL.Entities.dll
+C:\Users\Honor\Desktop\PDBProject\University.Domain.Core\bin\Debug\net5.0\ref\University.DAL.Entities.dll
+C:\Users\Honor\Desktop\PDBProject\University.Domain.Core\bin\Debug\net5.0\University.DAL.Entities.pdb
+C:\Users\Honor\Desktop\PDBProject\University.Domain.Core\obj\Debug\net5.0\University.DAL.Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Honor\Desktop\PDBProject\University.Domain.Core\obj\Debug\net5.0\University.DAL.Entities.AssemblyInfoInputs.cache
+C:\Users\Honor\Desktop\PDBProject\University.Domain.Core\obj\Debug\net5.0\University.DAL.Entities.AssemblyInfo.cs
+C:\Users\Honor\Desktop\PDBProject\University.Domain.Core\obj\Debug\net5.0\University.DAL.Entities.csproj.CoreCompileInputs.cache
+C:\Users\Honor\Desktop\PDBProject\University.Domain.Core\obj\Debug\net5.0\University.DAL.Entities.dll
+C:\Users\Honor\Desktop\PDBProject\University.Domain.Core\obj\Debug\net5.0\ref\University.DAL.Entities.dll
+C:\Users\Honor\Desktop\PDBProject\University.Domain.Core\obj\Debug\net5.0\University.DAL.Entities.pdb
+C:\Users\Honor\Desktop\PDBProject\University.Domain.Core\obj\Debug\net5.0\University.DAL.Entities.csproj.AssemblyReference.cache

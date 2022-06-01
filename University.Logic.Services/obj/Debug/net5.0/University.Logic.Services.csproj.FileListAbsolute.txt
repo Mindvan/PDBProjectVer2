@@ -1,0 +1,16 @@
+C:\Users\Honor\Desktop\PDBProject\University.Services.Interfaces\bin\Debug\net5.0\University.Logic.Services.deps.json
+C:\Users\Honor\Desktop\PDBProject\University.Services.Interfaces\bin\Debug\net5.0\University.Logic.Services.dll
+C:\Users\Honor\Desktop\PDBProject\University.Services.Interfaces\bin\Debug\net5.0\ref\University.Logic.Services.dll
+C:\Users\Honor\Desktop\PDBProject\University.Services.Interfaces\bin\Debug\net5.0\University.Logic.Services.pdb
+C:\Users\Honor\Desktop\PDBProject\University.Services.Interfaces\bin\Debug\net5.0\University.DAL.Entities.dll
+C:\Users\Honor\Desktop\PDBProject\University.Services.Interfaces\bin\Debug\net5.0\University.DAL.IRepository.dll
+C:\Users\Honor\Desktop\PDBProject\University.Services.Interfaces\bin\Debug\net5.0\University.DAL.Entities.pdb
+C:\Users\Honor\Desktop\PDBProject\University.Services.Interfaces\bin\Debug\net5.0\University.DAL.IRepository.pdb
+C:\Users\Honor\Desktop\PDBProject\University.Services.Interfaces\obj\Debug\net5.0\University.Logic.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Honor\Desktop\PDBProject\University.Services.Interfaces\obj\Debug\net5.0\University.Logic.Services.AssemblyInfoInputs.cache
+C:\Users\Honor\Desktop\PDBProject\University.Services.Interfaces\obj\Debug\net5.0\University.Logic.Services.AssemblyInfo.cs
+C:\Users\Honor\Desktop\PDBProject\University.Services.Interfaces\obj\Debug\net5.0\University.Logic.Services.csproj.CoreCompileInputs.cache
+C:\Users\Honor\Desktop\PDBProject\University.Services.Interfaces\obj\Debug\net5.0\University.Logic.Services.csproj.CopyComplete
+C:\Users\Honor\Desktop\PDBProject\University.Services.Interfaces\obj\Debug\net5.0\University.Logic.Services.dll
+C:\Users\Honor\Desktop\PDBProject\University.Services.Interfaces\obj\Debug\net5.0\ref\University.Logic.Services.dll
+C:\Users\Honor\Desktop\PDBProject\University.Services.Interfaces\obj\Debug\net5.0\University.Logic.Services.pdb

@@ -1,0 +1,15 @@
+C:\Users\Honor\Desktop\PDBProject\University.Domain.Interfaces\bin\Debug\net5.0\University.DAL.IRepository.deps.json
+C:\Users\Honor\Desktop\PDBProject\University.Domain.Interfaces\bin\Debug\net5.0\University.DAL.IRepository.dll
+C:\Users\Honor\Desktop\PDBProject\University.Domain.Interfaces\bin\Debug\net5.0\ref\University.DAL.IRepository.dll
+C:\Users\Honor\Desktop\PDBProject\University.Domain.Interfaces\bin\Debug\net5.0\University.DAL.IRepository.pdb
+C:\Users\Honor\Desktop\PDBProject\University.Domain.Interfaces\bin\Debug\net5.0\University.DAL.Entities.dll
+C:\Users\Honor\Desktop\PDBProject\University.Domain.Interfaces\bin\Debug\net5.0\University.DAL.Entities.pdb
+C:\Users\Honor\Desktop\PDBProject\University.Domain.Interfaces\obj\Debug\net5.0\University.DAL.IRepository.csproj.AssemblyReference.cache
+C:\Users\Honor\Desktop\PDBProject\University.Domain.Interfaces\obj\Debug\net5.0\University.DAL.IRepository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Honor\Desktop\PDBProject\University.Domain.Interfaces\obj\Debug\net5.0\University.DAL.IRepository.AssemblyInfoInputs.cache
+C:\Users\Honor\Desktop\PDBProject\University.Domain.Interfaces\obj\Debug\net5.0\University.DAL.IRepository.AssemblyInfo.cs
+C:\Users\Honor\Desktop\PDBProject\University.Domain.Interfaces\obj\Debug\net5.0\University.DAL.IRepository.csproj.CoreCompileInputs.cache
+C:\Users\Honor\Desktop\PDBProject\University.Domain.Interfaces\obj\Debug\net5.0\University.DAL.IRepository.csproj.CopyComplete
+C:\Users\Honor\Desktop\PDBProject\University.Domain.Interfaces\obj\Debug\net5.0\University.DAL.IRepository.dll
+C:\Users\Honor\Desktop\PDBProject\University.Domain.Interfaces\obj\Debug\net5.0\ref\University.DAL.IRepository.dll
+C:\Users\Honor\Desktop\PDBProject\University.Domain.Interfaces\obj\Debug\net5.0\University.DAL.IRepository.pdb
